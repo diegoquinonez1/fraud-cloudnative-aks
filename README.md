@@ -11,6 +11,35 @@ Design and implement an enterprise-oriented claims management platform for insur
  * Distributed observability: end-to-end traces (a visible transaction traversing services).
  * APIM exposes endpoints (e.g., querying score/decision) and adds basic policies.
 
+## Arquitectura (alto nivel)
+- **Entrada**: Azure API Management (APIM)
+- **Compute**: AKS (microservicios .NET)
+- **Eventos**: Event Hubs (hub + consumer groups)
+- **Datos**: Azure Database for PostgreSQL (managed)
+- **Seguridad**: Managed Identity / Key Vault (según implementación)
+- **Observabilidad**: OpenTelemetry + Application Insights/Azure Monitor
+
+Diagramas: ver `docs/c4/`.
+
+## Requisitos no funcionales (NFR)
+Ver `docs/nfr/`.
+
+## ADRs (decisiones)
+Ver `docs/adrs/`.
+
+## Contratos
+Esquemas de eventos: `docs/contracts/`
+
+## Deploy (Terraform + AKS)
+- Terraform: `infra/terraform/`
+- Manifests/Helm: (definir estándar aquí) **Pendiente**
+
+## Observabilidad y operación
+- Runbooks: `docs/runbooks/`
+
+## Demo para entrevistas
+- `docs/interview/`
+
 ## Licencia / Uso
 Copyright (c) 2026 Diego Quiñonez. Todos los derechos reservados.
 
