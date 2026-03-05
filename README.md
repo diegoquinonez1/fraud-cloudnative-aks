@@ -10,3 +10,9 @@ Design and implement an enterprise-oriented claims management platform for insur
  * Resilience: timeouts/retries + documented idempotence strategy.
  * Distributed observability: end-to-end traces (a visible transaction traversing services).
  * APIM exposes endpoints (e.g., querying score/decision) and adds basic policies.
+
+## Licencia / Uso
+Copyright (c) 2026 Diego Quiñonez. Todos los derechos reservados.
+
+Este repositorio es público únicamente para fines de revisión y evaluación.  
+No se otorga permiso para usar, copiar, modificar o redistribuir este contenido sin autorización escrita del autor.
